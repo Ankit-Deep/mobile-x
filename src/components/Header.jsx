@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Container, Logo } from "./index";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { MdOutlineAccountCircle } from "react-icons/md";
@@ -15,14 +15,21 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 
+import { useSidebar } from "@/context/SidebarContext";
+
 function Header() {
+  const { toggleSidebar } = useSidebar();
+
   return (
     <>
       <Container>
         <header className="flex gap-10">
           {/* the humburger & logo */}
           <div className=" flex items-center md:gap-5 gap-2 g w-fit">
-            <div className="md:text-2xl text-xl md:hidden cursor-pointer">
+            <div
+              className="md:text-2xl text-xl md:hidden cursor-pointer  h-full pt-2 "
+              onClick={toggleSidebar}
+            >
               <GiHamburgerMenu />
             </div>
 
@@ -63,10 +70,16 @@ function Header() {
                   <DropdownMenuContent className="cursor-pointer">
                     <DropdownMenuLabel>My Account</DropdownMenuLabel>
                     <DropdownMenuSeparator />
-                    <DropdownMenuItem className={'font-semibold'}>Profile</DropdownMenuItem>
- 
-                    <DropdownMenuItem className={'font-semibold'}>Sign Up</DropdownMenuItem>
-                    <p className=" px-2 text-xs fo  nt-semibold">New customer ?</p>
+                    <DropdownMenuItem className={"font-semibold"}>
+                      Profile
+                    </DropdownMenuItem>
+
+                    <DropdownMenuItem className={"font-semibold"}>
+                      Sign Up
+                    </DropdownMenuItem>
+                    <p className=" px-2 text-xs fo  nt-semibold">
+                      New customer ?
+                    </p>
                   </DropdownMenuContent>
                 </DropdownMenu>
               </div>

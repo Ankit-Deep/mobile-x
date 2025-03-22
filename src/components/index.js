@@ -8,4 +8,14 @@ import Catalog from "@/pages/Catalog";
 import Collections from "@/pages/Collections";
 import ContactUs from "@/pages/ContactUs";
 
-export { Header, Footer, Navigation, Container, Logo, Home, Catalog, Collections, ContactUs };
+export {
+  Header,
+  Footer,
+  Navigation,
+  Container,
+  Logo,
+  Home,
+  Catalog,
+  Collections,
+  ContactUs,
+};
