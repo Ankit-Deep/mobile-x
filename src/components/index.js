@@ -7,6 +7,8 @@ import Home from "@/pages/Home";
 import Catalog from "@/pages/Catalog";
 import Collections from "@/pages/Collections";
 import ContactUs from "@/pages/ContactUs";
+import BestSeller from "./BestSeller";
+import Reviews from "./Reviews";
 
 export {
   Header,
@@ -18,4 +20,6 @@ export {
   Catalog,
   Collections,
   ContactUs,
+  BestSeller,
+  Reviews
 };

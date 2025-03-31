@@ -23,9 +23,9 @@ function Header() {
   return (
     <>
       <Container>
-        <header className="flex gap-10">
+        <header className="flex gap-10 fixed top-0 left-0 w-full bg-white z-[1000] px-2 py-2">
           {/* the humburger & logo */}
-          <div className=" flex items-center md:gap-5 gap-2 g w-fit">
+          <div className="flex items-center md:gap-5 gap-2 w-fit">
             <div
               className="md:text-2xl text-xl md:hidden cursor-pointer  h-full pt-2 "
               onClick={toggleSidebar}

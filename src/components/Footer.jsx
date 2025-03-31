@@ -1,9 +1,12 @@
 import React from "react";
+import { Container } from ".";
 
 function Footer() {
   return (
     <>
-      <section>footer</section>
+      <section className="fixed bottom-0">
+        <Container>Footer</Container>
+      </section>
     </>
   );
 }

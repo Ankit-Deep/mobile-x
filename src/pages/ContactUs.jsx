@@ -1,9 +1,14 @@
-import React from 'react'
+import React from "react";
+import { Container } from "../components/index";
 
 function ContactUs() {
-    return (
-        <><div>Contact us</div></>
-    )
+  return (
+    <>
+      <section>
+        <Container>Contact us</Container>
+      </section>
+    </>
+  );
 }
 
-export default ContactUs
+export default ContactUs;

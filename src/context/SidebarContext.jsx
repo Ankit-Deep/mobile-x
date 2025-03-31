@@ -7,6 +7,13 @@ export const SidebarProvider = ({ children }) => {
 
   const toggleSidebar = () => {
     setIsOpen(!isOpen);
+  
+    if (!isOpen) {
+      document.body.style.overflow = "hidden"; // Disable scrolling
+    } else {
+      document.body.style.overflow = ""; // Re-enable scrolling
+    }
+    
   };
 
   return (

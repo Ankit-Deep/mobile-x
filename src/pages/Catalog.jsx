@@ -1,9 +1,14 @@
-import React from 'react'
+import React from "react";
+import { Container } from "../components/index";
 
 function Catalog() {
-    return (
-        <><div>Catalog</div></>
-    )
+  return (
+    <>
+      <section>
+        <Container>Catalog</Container>
+      </section>
+    </>
+  );
 }
 
-export default Catalog
+export default Catalog;

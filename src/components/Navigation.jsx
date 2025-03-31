@@ -28,7 +28,7 @@ function Navigation() {
   return (
     <>
       {/* For desktop or large screens */}
-      <section className="md:block hidden w-full border bg-blue-300">
+      <section className="md:block absolute top-14 hidden w-full border bg-blue-300">
         <Container>
           <div className="flex flex-row gap-15 items-center justify-center ">
             {navTabs.map((tab, index) => {
@@ -52,8 +52,8 @@ function Navigation() {
 
       {/* For small screens */}
       {isOpen && (
-        <aside className="md:hidden block overflow-auto">
-          <div className="w-[50%] h-screen border bg-blue-300 p-2">
+        <aside className="md:hidden fixed top-12 left-0 w-[50%] h-screen z-[1000] bg-white overflow-auto ">
+          <div className=" p-2">
             <div className="flex flex-col gap-2">
               {navTabs.map((tab, index) => {
                 return (
